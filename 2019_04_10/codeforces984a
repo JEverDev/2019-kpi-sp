@@ -18,6 +18,7 @@ public class Main {
 		} else {
 			System.out.println(array[ARRAY_SIZE/2-1]);
 		}
+		scanner.close();
 	}
 	
 }
