@@ -1,0 +1,22 @@
+import java.util.*;
+public final class Main
+{
+	private static int ARRAY_SIZE, count = 0;
+	
+	public static void main (String[] args) {
+	Scanner scanner = new Scanner(System.in);
+	ARRAY_SIZE = scanner.nextInt();
+	int[] array = new int[ARRAY_SIZE];
+	for(int i = 0; i < ARRAY_SIZE; i++) {
+		array[i] = scanner.nextInt();
+	}
+	Arrays.sort(array);
+	
+	for(int i = 0; i < ARRAY_SIZE-1; i+=2) {
+		count += (array[i+1] - array[i]);
+	}
+	System.out.println(count);
+	scanner.close();
+	}
+	
+}
